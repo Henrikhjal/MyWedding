@@ -1,0 +1,167 @@
+﻿body {
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: medium;
+}
+
+.rubriken
+{
+    color:red;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 30px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+
+#centerimage img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+    background-color:burlywood;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#purpleline {
+    height: 1px;
+    background-color: #7733ff;
+    border: none;
+    margin-left:16px;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+    background-color: peachpuff/* #f2dede; /*  #ffdab3  ;  #f2dede;*/
+}
+
+#header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#nav {
+    line-height: 50px;
+    background-color: #eeeeee;
+    height: 300px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+}
+
+#section {
+    width: 350px;
+    float: left;
+    padding: 20px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
+
+/* jssor slider  */
+.jssorb05 {
+    position: absolute;
+}
+
+    .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 16px;
+        height: 16px;
+        background: url(../Content/Images/b05.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .jssorb05 div {
+        background-position: -7px -7px;
+    }
+
+        .jssorb05 div:hover, .jssorb05 .av:hover {
+            background-position: -37px -7px;
+        }
+
+    .jssorb05 .av {
+        background-position: -67px -7px;
+    }
+
+    .jssorb05 .dn, .jssorb05 .dn:hover {
+        background-position: -97px -7px;
+    }
+
+
+/* jssor slider arrow navigator skin 11 css */
+/*
+.jssora11l                  (normal)
+.jssora11r                  (normal)
+.jssora11l:hover            (normal mouseover)
+.jssora11r:hover            (normal mouseover)
+.jssora11l.jssora11ldn      (mousedown)
+.jssora11r.jssora11rdn      (mousedown)
+*/
+.jssora11l, .jssora11r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    background: url(../Content/Images/Main/a11.png) no-repeat;
+    overflow: hidden;
+}
+
+.jssora11l {
+    background-position: -11px -41px;
+}
+
+.jssora11r {
+    background-position: -71px -41px;
+}
+
+.jssora11l:hover {
+    background-position: -131px -41px;
+}
+
+.jssora11r:hover {
+    background-position: -191px -41px;
+}
+
+.jssora11l.jssora11ldn {
+    background-position: -251px -41px;
+}
+
+.jssora11r.jssora11rdn {
+    background-position: -311px -41px;
+}
+

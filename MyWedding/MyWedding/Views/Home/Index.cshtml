@@ -1,0 +1,169 @@
+﻿@using MyWedding.Resources
+
+@{
+    ViewBag.Title = @Wedding.index_viewbag_title;
+}
+@Scripts.Render("~/Scripts/App/MyWedding.js")
+
+<div class="container">
+    <section id="main">
+        <img src="~/Content/Images/Main/balcony.jpg" alt="Henrik och Julia" style="margin-right:20px" class="pull-left img-thumbnail img-responsive" />
+        <h1>@Wedding.index_h1_title</h1>
+        <br />
+
+        <p>
+            <img src="~/Content/Images/Main/lavendel.png" alt="lavendel" width="60" height="60" align="middle"><i>@Wedding.index_date</i> <img src="~/Content/Images/Main/lavendel.png" alt="lavendel" width="60" height="60" align="middle">
+        </p><br />
+        <p>@Wedding.index_info</p><br /><p> @Wedding.index_pageupdate</p>
+        <hr />
+
+        <!-- Counter -->
+        @{int[] counter = { 60, 12, 5, 58 };}
+        @{
+            int j = 0;
+            for (int i = 1; i < 8; i += 2)
+            {
+                var css = "col-md-1";
+                var ctrlId = "timer" + @j;
+                <span id=@ctrlId style="font-weight:bold; font-style:italic; font-size:20px;color:blueviolet" class="@css">@counter[j]</span>
+                j++;
+            }
+            <br />
+        }
+        <br />
+
+        <span style="font-weight:bold" class="visible-lg visible-md col-md-1">@Wedding.index_days</span>
+        <span style="font-weight:bold" class="visible-lg visible-md text-left col-xs-0 col-md-1">@Wedding.index_hours</span>
+        <span style="font-weight:bold" class="visible-lg visible-md text-left col-xs-0 col-md-1">@Wedding.index_minutes</span>
+        <span style="font-weight:bold" class="visible-lg visible-md text-left col-xs-0 col-md-1">@Wedding.index_seconds</span>
+
+        <span style="font-weight:bold" class="visible-sm visible-xs col-xs-1 col-sm-1">D</span>
+        <span style="font-weight:bold" class="visible-sm visible-xs col-xs-1 col-sm-1">@Wedding.index_hours[0]</span>
+        <span style="font-weight:bold" class="visible-sm visible-xs col-xs-1 col-sm-1">M</span>
+        <span style="font-weight:bold" class="visible-sm visible-xs col-xs-1 col-sm-1">S</span>
+    </section>
+</div>
+
+<script type="text/javascript">updateClock();</script>
+<script>var timeinterval = setInterval(updateClock, 1000);</script>
+
+<div>
+    <hr id="purpleline" />
+</div>
+<div>
+    <h3 style="margin-left:14px">@Wedding.index_photoalbum</h3>
+    <section id="slider" class="col-md-6">
+        <div id="slider1_container" style="visibility: hidden;  position : relative; margin: auto; width: 640px; height: 425px;  overflow: hidden;">
+            <!-- Slides Container 980 380-->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 640px; height: 425px;overflow: hidden;">
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/01.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/02.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/03.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/04.jpg" class="img-thumbnail img-responsive" />
+                </div>
+
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/05.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/06.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/07.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/08.jpg" class="img-thumbnail img-responsive" />
+                </div>
+
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/09.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/10.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/11.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/12.jpg" class="img-thumbnail img-responsive" />
+                </div>
+
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/13.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/14.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/15.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/16.jpg" class="img-thumbnail img-responsive" />
+                </div>
+
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/17.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/18.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/19.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/20.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/21.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/Images/Slideshow/22.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/23.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/24.jpg" class="img-thumbnail img-responsive" />
+                </div>
+                <div>
+                    <img u="image" src="~/Content/images/Slideshow/25.jpg" class="img-thumbnail img-responsive" />
+                </div>
+            </div>
+
+            <!-- bullet navigator container -->
+            @*<div u="navigator" class="jssorb05" style="bottom: 16px; left: 500px; right: 6px;">
+                    <div u="prototype"></div>
+                </div>*@
+
+
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+            </span>
+        </div>
+    </section>
+</div>
+
+<div class="container"></div>
+<div class="container">
+    <p> <i>@Wedding.index_photoinfo</i></p>
+    <br />
+    <p>
+        @Html.ActionLink(@Wedding.technicalinfo, "TechnicalInfo")
+</div>
+
+<script src="~/Scripts/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="~/Scripts/pic_slider.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="~/Scripts/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="~/Scripts/jssor.slider.mini.js"></script>
+

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="available" xml:space="preserve">
+    <value>tillgängliga</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>tillbaka</value>
+  </data>
+  <data name="contact_contactus" xml:space="preserve">
+    <value>Kontakta oss</value>
+  </data>
+  <data name="contact_yourname" xml:space="preserve">
+    <value>Ditt namn</value>
+  </data>
+  <data name="guestbooktitle" xml:space="preserve">
+    <value>Gästbok</value>
+  </data>
+  <data name="guestbook_btn" xml:space="preserve">
+    <value>Publicera meddelandet</value>
+  </data>
+  <data name="guestbook_errormsg" xml:space="preserve">
+    <value>Ett fel uppstod i kommunikation med tjänst för gästboken</value>
+  </data>
+  <data name="guestbook_minimumtxt" xml:space="preserve">
+    <value>Minst två tecken</value>
+  </data>
+  <data name="guestbook_msg" xml:space="preserve">
+    <value>Ett meddelande behöver anges</value>
+  </data>
+  <data name="guestbook_msg_min" xml:space="preserve">
+    <value>Minst två tecken i meddelandet</value>
+  </data>
+  <data name="guestbook_villa" xml:space="preserve">
+    <value>Sjövillan, där festen äger rum.</value>
+  </data>
+  <data name="index_date" xml:space="preserve">
+    <value>14 maj 2016 i Nacka kyrka kl. 15.00</value>
+  </data>
+  <data name="index_days" xml:space="preserve">
+    <value>Dagar</value>
+  </data>
+  <data name="index_h1_title" xml:space="preserve">
+    <value>Nu är vi äntligen gifta!</value>
+  </data>
+  <data name="index_hours" xml:space="preserve">
+    <value>Timmar</value>
+  </data>
+  <data name="index_info" xml:space="preserve">
+    <value>Stort tack till er alla som gjorde vår bröllopsdag helt fantastisk! Tack också för Eevis underbara sång med vackert pianospel av Päivi och för alla jättefina presenter!</value>
+  </data>
+  <data name="index_minutes" xml:space="preserve">
+    <value>Minuter</value>
+  </data>
+  <data name="index_pageupdate" xml:space="preserve">
+    <value>Sidan kommer inom kort att uppdateras med bilder!</value>
+  </data>
+  <data name="index_photoalbum" xml:space="preserve">
+    <value>Fotoalbum</value>
+  </data>
+  <data name="index_photoinfo" xml:space="preserve">
+    <value>Här är ett urval av bilder från våra år tillsammans.</value>
+  </data>
+  <data name="index_seconds" xml:space="preserve">
+    <value>Sekunder</value>
+  </data>
+  <data name="index_viewbag_title" xml:space="preserve">
+    <value>Bröllop</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="info_clothes" xml:space="preserve">
+    <value>Klädsel: Kavaj. Innebär för honom ljus eller mörk kostym och för henne klänning, kjol eller finbyxor.</value>
+  </data>
+  <data name="info_colortheme" xml:space="preserve">
+    <value>Färgtema på bröllopet är lavendel, aprikos och grått.</value>
+  </data>
+  <data name="info_direction" xml:space="preserve">
+    <value>Vägbeskrivning, från Nacka Kyrka till Sjövillan</value>
+  </data>
+  <data name="info_importantinfo" xml:space="preserve">
+    <value>Viktig information</value>
+  </data>
+  <data name="info_link" xml:space="preserve">
+    <value>Sjövillan</value>
+  </data>
+  <data name="info_msg" xml:space="preserve">
+    <value>Berätta gärna om eventuella allergier eller annat som vi behöver veta. Det gör du enklast via menyn "Kontakta oss".</value>
+  </data>
+  <data name="info_msg2" xml:space="preserve">
+    <value>Gärna såpbubblor på bröllopet, istället för riskastande. 24 stycken små flaskor kommer att delas ut.</value>
+  </data>
+  <data name="info_osa" xml:space="preserve">
+    <value>O.S.A. senast 7 april. Det går bra att svara på inbjudan till bröllopet här på hemsidan eller via telefon eller mail.</value>
+  </data>
+  <data name="info_partyinfo" xml:space="preserve">
+    <value>Festen kommer att äga rum på Sjövillan i Lilla Nyckelviken, som ligger 5 km från kyrkan. Läs mer om den på följande länk:</value>
+  </data>
+  <data name="info_toastmaster" xml:space="preserve">
+    <value>Planerar du att hålla ett tal? Meddela i så fall Torgils Hjalmarson (torgils.hjalmarson@gmail.com), toast master.</value>
+  </data>
+  <data name="layout_ask" xml:space="preserve">
+    <value>Vid frågor om webbsidan, kontakta Henrik Hjalmarsson (webbansvarig)</value>
+  </data>
+  <data name="layout_menu1" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="layout_menu2" xml:space="preserve">
+    <value>Önskelista</value>
+  </data>
+  <data name="layout_menu3" xml:space="preserve">
+    <value>Viktig information</value>
+  </data>
+  <data name="layout_menu4" xml:space="preserve">
+    <value>Kontakta oss</value>
+  </data>
+  <data name="layout_menu5" xml:space="preserve">
+    <value>Gästbok</value>
+  </data>
+  <data name="layout_search" xml:space="preserve">
+    <value>Sök</value>
+  </data>
+  <data name="layout_searchstring" xml:space="preserve">
+    <value>Söksträng</value>
+  </data>
+  <data name="layout_wedding" xml:space="preserve">
+    <value>Julia och Henriks bröllop</value>
+  </data>
+  <data name="layout_wedding_short" xml:space="preserve">
+    <value>Bröllop</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Länk</value>
+  </data>
+  <data name="linkmissing" xml:space="preserve">
+    <value>Länk saknas</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Logga In</value>
+  </data>
+  <data name="login_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="login_userid" xml:space="preserve">
+    <value>Inloggningsnamn</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Ditt meddelande</value>
+  </data>
+  <data name="messagemandatory" xml:space="preserve">
+    <value>Ange ett meddelande</value>
+  </data>
+  <data name="messages_info" xml:space="preserve">
+    <value>Här kan du lämna meddelanden till Julia och/eller Henrik, t.ex. om eventuella allergier, OSA eller om du bara vill lämna en hälsning.</value>
+  </data>
+  <data name="mobile" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Namn</value>
+  </data>
+  <data name="namemandatory" xml:space="preserve">
+    <value>Namn är obligatoriskt</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>av</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="program_bestman" xml:space="preserve">
+    <value>Bestman: Fredrik Hjalmarson</value>
+  </data>
+  <data name="program_brudgirl" xml:space="preserve">
+    <value>Brudtärna: Ly Kaljumets</value>
+  </data>
+  <data name="program_churchadress" xml:space="preserve">
+    <value>Nacka Kyrka, Gamla Värmdövägen 14</value>
+  </data>
+  <data name="program_dance" xml:space="preserve">
+    <value>Dans och musik</value>
+  </data>
+  <data name="program_dinner" xml:space="preserve">
+    <value>Middag, havsbuffé</value>
+  </data>
+  <data name="program_info" xml:space="preserve">
+    <value>Information kommer</value>
+  </data>
+  <data name="program_marsalk" xml:space="preserve">
+    <value>Marskalk: Per-Åke Christiansson</value>
+  </data>
+  <data name="program_marscher" xml:space="preserve">
+    <value>Bröllopsmasch: Wagners Bröllopsmarsch</value>
+  </data>
+  <data name="program_photo" xml:space="preserve">
+    <value>Gruppfotografering utanför Sjövillan. Fotograf: Reza Zaker</value>
+  </data>
+  <data name="program_priest" xml:space="preserve">
+    <value>Präst: Gudni Agnarsson</value>
+  </data>
+  <data name="program_toast" xml:space="preserve">
+    <value>Välkomstskål</value>
+  </data>
+  <data name="program_toastmaster" xml:space="preserve">
+    <value>Toastmaster: Torgils Hjalmarson</value>
+  </data>
+  <data name="program_transport" xml:space="preserve">
+    <value>Transport med abonnerad buss till Sjövillan i Lilla Nyckelviken</value>
+  </data>
+  <data name="program_vigsel" xml:space="preserve">
+    <value>Vigsel i Nacka Kyrka</value>
+  </data>
+  <data name="pwmandatory" xml:space="preserve">
+    <value>Lösenord måste anges</value>
+  </data>
+  <data name="Reserve" xml:space="preserve">
+    <value>Tinga</value>
+  </data>
+  <data name="send" xml:space="preserve">
+    <value>Skicka</value>
+  </data>
+  <data name="technicalinfo" xml:space="preserve">
+    <value>Är du intresserad av hur webbsidan är utvecklad, klicka på länken.</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Ångra</value>
+  </data>
+  <data name="wishlist" xml:space="preserve">
+    <value>Önskelista</value>
+  </data>
+  <data name="wishlist_filepathLock" xml:space="preserve">
+    <value>../Content/images/wishlist/Lock2.png</value>
+  </data>
+  <data name="wishlist_filepathUnlock" xml:space="preserve">
+    <value>../Content/images/wishlist/Unlock2.png</value>
+  </data>
+  <data name="wishlist_info" xml:space="preserve">
+    <value>Tycker du att någon av presenterna nedan verkar lämpliga? Tinga den i så fall, för att förhinda att flera personer köper samma. Ångrar du dig är det bara att klicka på "Ångra-knappen". Eftersom inloggningen är anonym vet man inte vem som köpt vad.</value>
+  </data>
+  <data name="wishlist_travelfund" xml:space="preserve">
+    <value>Resebidrag</value>
+  </data>
+  <data name="wishlist_travelfund_text" xml:space="preserve">
+    <value>Bidrag till vår kommande bröllopsresa är välkommet! I så fall går det bra att swisha till Henriks mobilnummer (0046703053431), eller till SEB 5385 00 128 08</value>
+  </data>
+  <data name="wishlist_wines" xml:space="preserve">
+    <value>Viner</value>
+  </data>
+  <data name="wishlist_wines_text" xml:space="preserve">
+    <value>Viner är alltid uppskattat! T.ex. rött, vitt eller mousserande. Vi föredrar torra viner.</value>
+  </data>
+</root>
