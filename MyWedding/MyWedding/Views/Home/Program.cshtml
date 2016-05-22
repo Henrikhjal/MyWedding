@@ -1,0 +1,73 @@
+﻿@using MyWedding.Resources
+@{
+    ViewBag.Title = "Program";
+}
+
+<div class="container">
+    <img src="~/Content/Images/Main/Nacka Church.jpg" alt="Henrik och Julia" style="margin-right:20px;" class="pull-left img-thumbnail img-responsive">
+
+    <h1>Program</h1>
+
+    @*    <div class="col-md-6">*@
+    <table class="table table-responsive table-striped table-hover" style="width:auto">
+        <tbody>
+            <tr class="info">
+                <td>15:00</td>
+                <td><b>@Wedding.program_vigsel</b> </td>
+            </tr>
+            <tr class="danger">
+                <td></td>
+                <td><i>@Wedding.program_priest</i> </td>
+            </tr>
+            <tr class="info">
+                <td></td>
+                <td><i>@Wedding.program_brudgirl</i></td>
+            </tr>
+            <tr class="danger">
+                <td></td>
+                <td><i>@Wedding.program_bestman </i></td>
+            </tr>
+            <tr class="info">
+                <td></td>
+                <td><i>@Wedding.program_marsalk </i></td>
+            </tr>
+            <tr class="danger">
+                <td></td>
+                <td><i>@Wedding.program_marscher </i></td>
+            </tr>
+
+            <tr class="info">
+                <td>16:30</td>
+                <td><b>@Wedding.program_transport</b> </td>
+            </tr>
+            <tr class="danger">
+                <td>17:30</td>
+                <td><i>@Wedding.program_photo</i> </td>
+            </tr>
+            <tr class="info">
+                <td>18:00</td>
+                <td><b>@Wedding.program_toast</b> </td>
+            </tr>
+            <tr class="danger">
+                <td>19:00</td>
+                <td><b>@Wedding.program_dinner</b> </td>
+            </tr>
+            <tr class="info">
+                <td></td>
+                <td><i>@Wedding.program_toastmaster</i></td>
+            </tr>
+            <tr class="danger">
+                <td>22:00</td>
+                <td><b>@Wedding.program_dance</b> </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <p><i>@Wedding.program_churchadress</i></p>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+
+

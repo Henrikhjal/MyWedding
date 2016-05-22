@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MyWedding.Utility;
 
 namespace MyWedding.Controllers
 {
@@ -13,17 +14,24 @@ namespace MyWedding.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult TechnicalInfo()
         {
-            ViewBag.Message = "Your application description page.";
-
+            Utility.Utility.setLanguage(Request);
+            //Utility.Utility.WriteLog("Home-TechnicalInfo", (string)Session["UserId"]);
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Program()
         {
-            ViewBag.Message = "Your contact page.";
+            Utility.Utility.setLanguage(Request);
+            Utility.Utility.WriteLog("Home-Program", (string)Session["UserId"]);
+            return View();
+        }
 
+        public ActionResult Contacts()
+        {
+            Utility.Utility.setLanguage(Request);
+            Utility.Utility.WriteLog("Home-Contacts", (string)Session["UserId"]);
             return View();
         }
     }
