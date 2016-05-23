@@ -11,6 +11,7 @@ namespace MyWedding.Controllers
     {
         public ActionResult Index()
         {
+            // a comment.
             Utility.Utility.setLanguage(Request);
             return View();
         }
