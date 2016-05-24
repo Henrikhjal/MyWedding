@@ -16,5 +16,10 @@ namespace MyWedding.Repository
             _db.Messages.Add(message);
             _db.SaveChanges();
         }
+
+        public WishlistItem FindWishlistItemById(int wishlistId)
+        {
+            return _db.WishlistItems.Find(wishlistId);
+        }
     }
 }

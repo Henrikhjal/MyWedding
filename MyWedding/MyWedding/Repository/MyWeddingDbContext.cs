@@ -9,5 +9,6 @@ namespace MyWedding.Repository
         {
         }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<WishlistItem> WishlistItems { get; set; }
     }
 }
