@@ -35,7 +35,7 @@
                                 <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Program" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu1, "Program", "Home")</li>
                                 <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Wishlist" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu2, "Wishlist", "Wishlist")</li>
                                 <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Info" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu3, "Info", "Home")</li>
-                                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contacts" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu4, "Contacts", "Home")</li>
+                                <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contacts" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu4, "Contacts", "Messages")</li>
                                 <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Guestbook" ? "active" : "")">@Html.ActionLink(@Wedding.layout_menu5, "Index", "Guestbook")</li>
 
                             </ul>
