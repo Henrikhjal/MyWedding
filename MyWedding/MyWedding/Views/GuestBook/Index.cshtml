@@ -1,0 +1,59 @@
+﻿@using MyWedding.Resources
+
+@{
+    ViewBag.Title = @Wedding.guestbooktitle;
+}
+
+<script src="~/Scripts/jquery-2.2.3.min.js"></script>
+<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/App/app-guestbook.js"></script>
+<script src="~/Scripts/App/guestbookController.js"></script>
+
+@*<div class="container" ng-app="app-guestbook">*@
+    
+    <section id="picture" class="col-md-4">
+        <img src="~/Content/Images/Main/villa.jpg" class="img-responsive img-thumbnail" alt="Villa by Henrik Hjalmarsson">
+        <p>@Wedding.guestbook_villa</p>
+    </section>
+
+    <section id="guestbook" class="col-md-8">
+        <h2>@Wedding.guestbooktitle</h2>
+
+        <div ng-app="app-guestbook" ng-controller="guestbookController">
+
+            <div class="text-danger" ng-show="errorMessage">{{errorMessage}}</div>
+
+            <form novalidate name="newGuestbookForm" ng-submit="addMessage()">
+                <div class="form-group">
+                    <label for="name">@Wedding.contact_yourname</label>
+                    <input class="form-control" type="text" id="name" name="name" ng-model="newMessage.Name" required ng-minlength="2" />
+                    <span ng-show="newGuestbookForm.name.$error.required" class="text-warning">@Wedding.namemandatory</span>
+                    <span ng-show="newGuestbookForm.name.$error.minlength" class="text-warning">@Wedding.guestbook_minimumtxt</span>
+                    <br /><br />
+
+                    <label for="msg">@Wedding.message</label>
+                    @*<input class="form-control" type="Text" id="msg" name="msg" ng-model="newMessage.MessageText" required ng-minlength="3" />*@
+                    <textarea class="form-control" rows="3" id="msg" name="msg" required ng-minlength="3" ng-model="newMessage.MessageText"></textarea>
+                    <span ng-show="newGuestbookForm.msg.$error.required" class="text-warning">@Wedding.guestbook_msg</span>
+                    <span ng-show="newGuestbookForm.msg.$error.minlength" class="text-warning">@Wedding.guestbook_msg_min</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value=@Wedding.guestbook_btn class="btn btn-sm btn-primary" ng-disabled="newGuestbookForm.$invalid" />
+                </div>
+            </form>
+            <br /><br />
+
+            <div ng-repeat="m in Messages">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><i>{{m.Name}}  &nbsp - &nbsp   {{m.Date | date: 'yyyy-MM-dd hh:mm'}}</i></div>
+                        <div class="panel-body">{{m.MessageText}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@*</div>*@
+
+

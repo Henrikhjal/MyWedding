@@ -43,21 +43,21 @@ namespace MyWedding.Controllers
             return View();
         }
 
-        public ActionResult ReserveUndo(int WishlistId, int WishlistAction)
+        public ActionResult ReserveUndo(int WishlistId, WishListAction WishlistAction)
         {
             if (WishlistId == 0)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            WishlistItem wishlistItem = _MyWeddingRepository.FindWishlistItemById(WishlistId);
+            WishlistItem wishlistItem = _MyWeddingRepository.GetWishlistItemById(WishlistId);  //db.WishlistItems.Find(WishlistId);
 
             if (wishlistItem == null)
             {
                 return HttpNotFound();
             }
 
-            if (WishlistAction == 1)
+            if (WishlistAction == WishListAction.Reserve)
             {
                 if (wishlistItem.Reserved < wishlistItem.Quantity) wishlistItem.Reserved++;
                 Utility.Utility.WriteLog("Wishlist-Reserve", (string)Session["UserId"]);
@@ -68,10 +68,12 @@ namespace MyWedding.Controllers
                 Utility.Utility.WriteLog("Wishlist-Undo", (string)Session["UserId"]);
             }
 
-            //hh db.Entry(wishlistItem).State = EntityState.Modified;
-            //hh db.SaveChanges();
-            return RedirectToAction("Wishlist");
-            //return View(db.WishlistItems.ToList());
+            _MyWeddingRepository.UpdateWishListItem(wishlistItem);
+            //db.Entry(wishlistItem).State = EntityState.Modified;
+            //db.SaveChanges();
+            Utility.Utility.setLanguage(Request);
+
+            return PartialView("_wishListButtons", wishlistItem);
         }
 
         public ActionResult Create()

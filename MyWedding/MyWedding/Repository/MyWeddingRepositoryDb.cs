@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using MyWedding.Models;
 using MyWedding.Repository;
+using System.Data.Entity;
 
 namespace MyWedding.Repository
 {
@@ -24,7 +25,7 @@ namespace MyWedding.Repository
             _db.SaveChanges();
         }
 
-        public WishlistItem FindWishlistItemById(int wishlistId)
+        public WishlistItem GetWishlistItemById(int wishlistId)
         {
             return _db.WishlistItems.Find(wishlistId);
         }
@@ -32,6 +33,12 @@ namespace MyWedding.Repository
         public List<WishlistItem> GetAllWishListItems()
         {
             return _db.WishlistItems.ToList();
+        }
+
+        public void UpdateWishListItem(WishlistItem wishListItem)
+        {
+            _db.Entry(wishListItem).State = EntityState.Modified;
+            _db.SaveChanges();
         }
     }
 }

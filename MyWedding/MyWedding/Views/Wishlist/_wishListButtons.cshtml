@@ -1,0 +1,64 @@
+﻿@model MyWedding.Models.WishlistItem
+@using MyWedding.Resources;
+@using MyWedding.Models;
+@using MyWedding.Utility;
+
+@*@Scripts.Render("~/Scripts/App/wishlist.js")*@
+
+@{
+    var reserved = Model.Reserved;
+    var bId = "wishListButtons" + @Model.Id;
+    var diff = @Model.Quantity - @Model.Reserved;
+}
+
+@if (reserved > 0)
+{
+    if (diff > 0)
+    {
+        @Ajax.ImageActionLink(@Wedding.wishlist_filepathLock.ToString(), "Reserve", "ReserveUndo", new
+        {
+            WishlistId = @Model.Id,
+            WishlistAction = WishListAction.Reserve
+        }, new AjaxOptions
+    {
+       UpdateTargetId = bId,
+       InsertionMode = InsertionMode.Replace,
+       HttpMethod = "GET",
+       OnSuccess = "flashItem('" + @Model.Id + "');" 
+   }, new { @class = "btn btn-default" })
+}
+<br /><br />
+
+@Ajax.ImageActionLink(@Wedding.wishlist_filepathUnlock.ToString(), "Undo", "ReserveUndo", new { WishlistId = @Model.Id, WishlistAction = WishListAction.Undo }, new AjaxOptions
+{
+    UpdateTargetId = bId,
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "GET",
+    OnSuccess = "flashItem('" + @Model.Id + "');"
+}, new { @class = "btn btn-default" })
+
+}
+
+else
+{
+    @Ajax.ImageActionLink(@Wedding.wishlist_filepathLock.ToString(), "Reserve", "ReserveUndo", new { WishlistId = @Model.Id, WishlistAction = WishListAction.Reserve }, new AjaxOptions
+{
+    UpdateTargetId = bId,
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "GET",
+    OnSuccess = "flashItem('" + @Model.Id + "');"
+}, new { @class = "btn btn-default" })
+}
+
+<script>
+    function flashItem(elementId) {
+        var txt =  "<b>" + @diff + "</b> @Wedding.of " + "<b>" + @Model.Quantity + "</b>" + " @Wedding.available" + "</span>";
+
+        var id = "availableItems" + elementId;
+        document.getElementById(id).innerHTML = "<b>" + @diff + "</b> @Wedding.of " + "<b>" + @Model.Quantity + "</b>" + " @Wedding.available" + "</span>";
+
+        id = "#" + id;
+        $(id).effect("highlight");
+        $(id).effect("highlight");
+    }
+</script>

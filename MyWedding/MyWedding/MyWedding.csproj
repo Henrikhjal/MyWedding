@@ -165,6 +165,8 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\Api\GuestbookMessagesController.cs" />
+    <Compile Include="Controllers\GuestbookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\WishlistController.cs" />
@@ -214,6 +216,7 @@
     <Content Include="Content\Images\Main\Lavendel.png" />
     <Content Include="Content\Images\Main\map.jpg" />
     <Content Include="Content\Images\Main\Nacka Church.jpg" />
+    <Content Include="Content\Images\Main\villa.jpg" />
     <Content Include="Content\Images\Slideshow\01.jpg" />
     <Content Include="Content\Images\Slideshow\02.jpg" />
     <Content Include="Content\Images\Slideshow\03.jpg" />
@@ -244,6 +247,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\app-guestbook.js" />
+    <Content Include="Scripts\App\guestbookController.js" />
     <Content Include="Scripts\App\MyWedding.js" />
     <Content Include="Scripts\App\Wishlist.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -285,6 +290,8 @@
     <Content Include="Views\Wishlist\_wishListItems.cshtml" />
     <Content Include="Views\Wishlist\Wishlist.cshtml" />
     <Content Include="Views\Wishlist\Create.cshtml" />
+    <Content Include="Views\Wishlist\_wishListButtons.cshtml" />
+    <Content Include="Views\GuestBook\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

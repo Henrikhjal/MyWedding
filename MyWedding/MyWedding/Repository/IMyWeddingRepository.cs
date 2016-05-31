@@ -12,8 +12,9 @@ namespace MyWedding.Repository
         
 
         void AddMessage(MyWedding.Models.Message message);
-        WishlistItem FindWishlistItemById(int wishlistId);
+        WishlistItem GetWishlistItemById(int wishlistId);
         List<WishlistItem> GetAllWishListItems();
         void AddWishListItem(MyWedding.Models.WishlistItem wishListItem);
+        void UpdateWishListItem(MyWedding.Models.WishlistItem wishListItem);
     }
 }
