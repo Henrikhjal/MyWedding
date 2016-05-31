@@ -1,0 +1,27 @@
+﻿@using MyWedding.Resources
+
+@{
+    ViewBag.Title = @Wedding.wishlist;
+}
+
+<div class="container" style="margin-bottom:50px">
+    <h2>@Wedding.wishlist</h2>
+
+    <div style="overflow:hidden">
+        <img src="~/Content/Images/wishlist/boat.jpg" alt="boat" style="margin-right:16px" class="pull-left img-thumbnail img-responsive " />
+        <br />
+        <p><b>@Wedding.wishlist_travelfund</b></p>
+        @Wedding.wishlist_travelfund_text
+    </div>
+    <br />
+    <div>
+        <img src="~/Content/Images/wishlist/wines.jpg" alt="wines" style="margin-right:16px" class="pull-left img-thumbnail img-responsive " />
+        <br />
+        <p> <b>@Wedding.wishlist_wines</b></p>
+        @Wedding.wishlist_wines_text
+    </div>
+</div>
+@Html.Partial("~/Views/Wishlist/_wishListItems.cshtml")
+<hr />
+@Html.ActionLink(@Wedding.back, "Index","Home")
+

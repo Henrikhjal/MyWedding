@@ -164,6 +164,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\WishlistController.cs" />
@@ -177,6 +178,10 @@
     <Compile Include="Migrations\201605241604016_1.cs" />
     <Compile Include="Migrations\201605241604016_1.Designer.cs">
       <DependentUpon>201605241604016_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605311604472_2.cs" />
+    <Compile Include="Migrations\201605311604472_2.Designer.cs">
+      <DependentUpon>201605311604472_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Message.cs" />
@@ -240,6 +245,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\App\MyWedding.js" />
+    <Content Include="Scripts\App\Wishlist.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -276,11 +282,14 @@
     <Content Include="Views\Home\Program.cshtml" />
     <Content Include="Views\Home\Info.cshtml" />
     <Content Include="Views\Messages\Contacts.cshtml" />
+    <Content Include="Views\Wishlist\_wishListItems.cshtml" />
+    <Content Include="Views\Wishlist\Wishlist.cshtml" />
+    <Content Include="Views\Wishlist\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\Wishlist\" />
-    <Folder Include="Views\Wishlist\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -296,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605241604016_1.resx">
       <DependentUpon>201605241604016_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605311604472_2.resx">
+      <DependentUpon>201605311604472_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Wedding.en-GB.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
