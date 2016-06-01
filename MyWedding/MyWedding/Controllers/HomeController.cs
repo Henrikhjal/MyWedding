@@ -7,6 +7,7 @@ using MyWedding.Utility;
 
 namespace MyWedding.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()

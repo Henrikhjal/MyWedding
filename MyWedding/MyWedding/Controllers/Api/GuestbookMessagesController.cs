@@ -10,6 +10,7 @@ using MyWedding.Repository;
 
 namespace MyWedding.Controllers.Api
 {
+    [Authorize]
     public class GuestbookMessagesController : ApiController
     {
         private MyWeddingbContext _db = new MyWeddingbContext();

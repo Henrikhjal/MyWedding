@@ -169,6 +169,7 @@
     <Compile Include="Controllers\GuestbookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\WishlistController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -187,6 +188,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\Wishlist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IMyWeddingRepository.cs" />
@@ -250,6 +252,7 @@
     <Content Include="Scripts\App\app-guestbook.js" />
     <Content Include="Scripts\App\guestbookController.js" />
     <Content Include="Scripts\App\MyWedding.js" />
+    <Content Include="Scripts\App\position.js" />
     <Content Include="Scripts\App\Wishlist.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -292,6 +295,7 @@
     <Content Include="Views\Wishlist\Create.cshtml" />
     <Content Include="Views\Wishlist\_wishListButtons.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

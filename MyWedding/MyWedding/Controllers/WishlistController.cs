@@ -9,6 +9,7 @@ using System.Net;
 
 namespace MyWedding.Controllers
 {
+    [Authorize]
     public class WishlistController : Controller
     {
         private readonly IMyWeddingRepository _MyWeddingRepository;

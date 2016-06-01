@@ -5,6 +5,7 @@ using MyWedding.Repository;
 
 namespace MyWedding.Controllers
 {
+    [Authorize]
     public class MessagesController : Controller
     {
         private readonly IMyWeddingRepository _MyWeddingRepository;
