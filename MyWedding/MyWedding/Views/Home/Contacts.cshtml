@@ -1,12 +1,11 @@
 ﻿@using MyWedding.Resources
-@model Wedding.Models.Message4
+@model MyWedding.Models.Message
 
 @{
     ViewBag.Title = @Wedding.contact_contactus;
 }
-
 <div class="container">
-    <img src="~/Content/Images/cranes.jpg" class="img-responsive pull-left" style="margin-right:20px;" alt="Cranes in formation by Henrik Hjalmarsson">
+    <img src="~/Content/Images/Main/Cranes.jpg" class="img-responsive pull-left" style="margin-right:20px;" alt="Cranes in formation by Henrik Hjalmarsson">
 
         <h1>@Wedding.contact_contactus</h1>
 
@@ -22,7 +21,7 @@
 </div>
 
 <div class="container" style="margin-top:50px">
-    @using (Html.BeginForm("CreateMessage", "Home", FormMethod.Post, new { role = "form" }))
+    @using (Html.BeginForm("AddMessage", "Messages", FormMethod.Post, new { role = "form" }))
     {
         @Html.AntiForgeryToken()
 
@@ -51,3 +50,4 @@
     }
     </div>
 
+@Scripts.Render("~/bundles/jquery")
