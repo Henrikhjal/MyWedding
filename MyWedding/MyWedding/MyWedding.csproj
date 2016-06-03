@@ -211,6 +211,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Main\a11.png" />
     <Content Include="Content\Images\Main\Balcony.jpg" />
+    <Content Include="Content\Images\Main\Couple.jpg" />
     <Content Include="Content\Images\Main\Cranes.jpg" />
     <Content Include="Content\Images\Main\Flag swe.png" />
     <Content Include="Content\Images\Main\Flag uk.png" />

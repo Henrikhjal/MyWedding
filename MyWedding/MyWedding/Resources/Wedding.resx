@@ -366,4 +366,7 @@
   <data name="wishlist_wines_text" xml:space="preserve">
     <value>Viner är alltid uppskattat! T.ex. rött, vitt eller mousserande. Vi föredrar torra viner.</value>
   </data>
+  <data name="index_ThanksPictures" xml:space="preserve">
+    <value>Reza och Pompi, tack för att ni fotograferade och filmade!</value>
+  </data>
 </root>

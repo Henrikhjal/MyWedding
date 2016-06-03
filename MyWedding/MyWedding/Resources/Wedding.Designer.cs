@@ -250,6 +250,15 @@ namespace MyWedding.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reza och Pompi, tack för att ni fotograferade och filmade!.
+        /// </summary>
+        public static string index_ThanksPictures {
+            get {
+                return ResourceManager.GetString("index_ThanksPictures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bröllop.
         /// </summary>
         public static string index_viewbag_title {
