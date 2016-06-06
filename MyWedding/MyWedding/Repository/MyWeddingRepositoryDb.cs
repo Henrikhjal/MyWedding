@@ -17,6 +17,11 @@ namespace MyWedding.Repository
             get { return _db.Messages; }
         }
 
+        public IEnumerable<WishlistItem> WishlistItems
+        {
+            get { return _db.WishlistItems; }
+        }
+
         public void AddMessage(Message message)
         {
             _db.Messages.Add(message);

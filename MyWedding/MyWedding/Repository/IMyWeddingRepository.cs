@@ -17,5 +17,6 @@ namespace MyWedding.Repository
         List<WishlistItem> GetAllWishListItems();
         void AddWishListItem(MyWedding.Models.WishlistItem wishListItem);
         void UpdateWishListItem(MyWedding.Models.WishlistItem wishListItem);
+        IEnumerable<WishlistItem> WishlistItems{ get; }
     }
 }
