@@ -15,7 +15,6 @@ namespace MyWedding.Tests.Controllers
     [TestClass]
     public class MyWeddingTest
     {
-        // Unit tests will be created.
         [TestMethod]
         public void Can_Add_Private_Message()
         {
@@ -41,9 +40,20 @@ namespace MyWedding.Tests.Controllers
             Assert.AreEqual(MessageArray[1].MessageText, "ett till meddelande");
         }
 
-        public void CanReserveWishListItem()
+        [TestMethod]
+        public void Can_Reserve_Item_In_Wishlist()
         {
             // arrange
+            Mock<IMyWeddingRepository> mock = new Mock<IMyWeddingRepository>();
+
+            mock.Setup(m => m.WishlistItems).Returns(new WishlistItem[]{
+                new WishlistItem{ Id=1, Name= "Item1", Details = "Item1 details", Price  = 100, Quantity=3, Reserved=1 },
+                new WishlistItem{ Id=2, Name= "Item2", Details = "Item2 details", Price  = 200, Quantity=4, Reserved=0 },
+                new WishlistItem{ Id=3,  Name= "Item3", Details = "Item3 details", Price  = 300, Quantity=2, Reserved=2 }
+                });
+
+
+            WishlistController controller = new WishlistController(mock.Object);
 
             // act
 
