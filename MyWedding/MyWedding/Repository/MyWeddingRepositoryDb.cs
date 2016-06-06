@@ -12,6 +12,10 @@ namespace MyWedding.Repository
     {
         private readonly MyWeddingbContext _db = new MyWeddingbContext();
 
+        public IEnumerable<Message> Messages
+        {
+            get { return _db.Messages; }
+        }
 
         public void AddMessage(Message message)
         {
@@ -39,6 +43,11 @@ namespace MyWedding.Repository
         {
             _db.Entry(wishListItem).State = EntityState.Modified;
             _db.SaveChanges();
+        }
+
+        public List<Message> GetAllMessages()
+        {
+            return _db.Messages.ToList();
         }
     }
 }

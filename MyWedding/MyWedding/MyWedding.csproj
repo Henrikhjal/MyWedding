@@ -245,11 +245,24 @@
     <Content Include="Content\Images\Slideshow\23.jpg" />
     <Content Include="Content\Images\Slideshow\24.jpg" />
     <Content Include="Content\Images\Slideshow\25.jpg" />
+    <Content Include="Content\Images\Wishlist\boat.jpg" />
+    <Content Include="Content\Images\Wishlist\dricksglas.jpg" />
+    <Content Include="Content\Images\Wishlist\Lock2 uk.png" />
+    <Content Include="Content\Images\Wishlist\Lock2.png" />
+    <Content Include="Content\Images\Wishlist\Påslakanset.jpg" />
+    <Content Include="Content\Images\Wishlist\ugnsfat.jpg" />
+    <Content Include="Content\Images\Wishlist\Unlock2 uk.png" />
+    <Content Include="Content\Images\Wishlist\Unlock2.png" />
+    <Content Include="Content\Images\Wishlist\vinglas.jpg" />
+    <Content Include="Content\Images\Wishlist\wines.jpg" />
     <Content Include="Content\sticky-footer-navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\App\app-guestbook.js" />
     <Content Include="Scripts\App\guestbookController.js" />
     <Content Include="Scripts\App\MyWedding.js" />
@@ -257,6 +270,7 @@
     <Content Include="Scripts\App\Wishlist.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -297,10 +311,10 @@
     <Content Include="Views\Wishlist\_wishListButtons.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Messages\ShowMessages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\Wishlist\" />
     <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>

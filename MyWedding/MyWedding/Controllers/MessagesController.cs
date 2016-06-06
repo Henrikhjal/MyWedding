@@ -22,6 +22,12 @@ namespace MyWedding.Controllers
             return View();
         }
 
+        public ViewResult ShowMessages()
+        {
+            return View(_MyWeddingRepository.GetAllMessages());
+        }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult AddMessage([Bind(Include = "Id, Name, MessageText")] Message message)
