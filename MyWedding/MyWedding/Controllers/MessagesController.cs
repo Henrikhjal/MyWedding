@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using MyWedding.Models;
 using MyWedding.Repository;
+using System.Collections.Generic;
 
 namespace MyWedding.Controllers
 {
@@ -24,7 +25,10 @@ namespace MyWedding.Controllers
 
         public ViewResult ShowMessages()
         {
-            return View(_MyWeddingRepository.GetAllMessages());
+            List<Message> msg = _MyWeddingRepository.GetAllMessages();
+
+            //return View(_MyWeddingRepository.GetAllMessages());
+            return View(_MyWeddingRepository.Messages);
         }
 
 

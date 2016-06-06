@@ -16,6 +16,7 @@ namespace MyWedding.Tests.Controllers
     public class MyWeddingTest
     {
         // Unit tests will be created.
+        [TestMethod]
         public void Can_Add_Private_Message()
         {
             // arrange
@@ -31,11 +32,13 @@ namespace MyWedding.Tests.Controllers
             // act
             IEnumerable<Message> result = (IEnumerable<Message>)controller.ShowMessages().Model;
 
-            // assert
+            //// assert
             Message[] MessageArray = result.ToArray();
             Assert.IsTrue(MessageArray.Length == 2);
             Assert.AreEqual(MessageArray[0].Name, "Name1");
+            Assert.AreEqual(MessageArray[0].MessageText, "ett meddelande");
             Assert.AreEqual(MessageArray[1].Name, "Name2");
+            Assert.AreEqual(MessageArray[1].MessageText, "ett till meddelande");
         }
 
         public void CanReserveWishListItem()
