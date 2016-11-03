@@ -1,0 +1,6 @@
+C:\git\MyWedding\MyWedding\Messages\bin\Debug\Messages.dll.config
+C:\git\MyWedding\MyWedding\Messages\bin\Debug\Messages.dll
+C:\git\MyWedding\MyWedding\Messages\bin\Debug\Messages.pdb
+C:\git\MyWedding\MyWedding\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache
+C:\git\MyWedding\MyWedding\Messages\obj\Debug\Messages.dll
+C:\git\MyWedding\MyWedding\Messages\obj\Debug\Messages.pdb

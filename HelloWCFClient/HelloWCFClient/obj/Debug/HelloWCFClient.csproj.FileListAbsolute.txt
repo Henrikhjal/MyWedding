@@ -1,0 +1,15 @@
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\bin\Debug\HelloWCFClient.exe.config
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\bin\Debug\HelloWCFClient.exe
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\bin\Debug\HelloWCFClient.pdb
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.csprojResolveAssemblyReference.cache
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\MainWindow.g.cs
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\App.g.cs
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient_MarkupCompile.cache
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient_MarkupCompile.lref
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\MainWindow.baml
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.g.resources
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.Properties.Resources.resources
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.csproj.GenerateResource.Cache
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.exe
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.pdb
+C:\git\MyWedding\HelloWCFClient\HelloWCFClient\obj\Debug\HelloWCFClient.csproj.HelloWCFClient.exe.config

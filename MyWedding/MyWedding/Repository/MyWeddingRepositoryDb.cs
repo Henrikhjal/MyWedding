@@ -54,5 +54,16 @@ namespace MyWedding.Repository
         {
             return _db.Messages.ToList();
         }
+
+        public List<Message> GetAllPublicMessages()
+        {
+            MyWeddingbContext _db = new MyWeddingbContext();
+            return _db.Messages.Where(o => o.Public == true).OrderByDescending(o => o.Date).ToList();
+        }
+
+        public Message GetMessageById(int Id)
+        {
+            return _db.Messages.Find(Id);
+        }
     }
 }

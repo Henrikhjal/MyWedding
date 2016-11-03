@@ -14,11 +14,20 @@ namespace MyWedding.Controllers.Api
     public class GuestbookMessagesController : ApiController
     {
         private MyWeddingbContext _db = new MyWeddingbContext();
+        private readonly IMyWeddingRepository _MyWeddingRepository;
 
-        public List<Message> GetMessages()
+        //public GuestbookMessagesController(IMyWeddingRepository myWeddingRepository)
+        //{
+        //    _MyWeddingRepository = myWeddingRepository;
+        //}
+
+
+        [HttpGet]
+        public List<Message> GetAllMessages()
         {
             // the guestbook only shows public messages
             return _db.Messages.Where(o => o.Public == true).OrderByDescending(o => o.Date).ToList();
+            // return _MyWeddingRepository.GetAllPublicMessages().ToList();
         }
 
         [HttpGet]

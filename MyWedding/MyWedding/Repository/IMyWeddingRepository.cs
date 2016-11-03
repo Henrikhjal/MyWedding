@@ -12,7 +12,9 @@ namespace MyWedding.Repository
         IEnumerable<Message> Messages{ get; }
         void AddMessage(MyWedding.Models.Message message);
 
+        Message GetMessageById(int Id);
         List<Message> GetAllMessages();
+        List<Message> GetAllPublicMessages();
         WishlistItem GetWishlistItemById(int wishlistId);
         List<WishlistItem> GetAllWishListItems();
         void AddWishListItem(MyWedding.Models.WishlistItem wishListItem);
